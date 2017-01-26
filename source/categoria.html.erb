@@ -1,0 +1,114 @@
+<div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h1><%= categoria %></h1>
+            </div>
+            <div class="col-md-5">
+                <ul class="breadcrumb">
+                    <li><a href="index.html">Home</a>
+                    </li>
+                    <li><a href="../../">Produtos</a>
+                    </li>
+                    <li><%= categoria %></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="content">
+    <div class="container">
+
+        <section>
+
+<!--             <div class="row">
+                <div class="col-md-12">
+                    <div class="heading">
+                        <h2>Faça já sua encomenda</h2>
+                    </div>
+
+                    <p class="lead"><i class="fa fa-whatsapp" aria-hidden="true"></i> 41 96937334</p>
+                </div>
+            </div> -->
+
+            <div class="row portfolio no-space">
+
+              <% blog("produtos").articles.select{ |i| i.data.categoria == categoria }.each do |article|  %>
+
+                <div class="col-sm-6">
+                    <div class="box-image">
+                        <div class="image">
+                            <%= thumb_tag article.data.image.first,'750x500#', class:"img-responsive" %>
+                        </div>
+                        <div class="bg"></div>
+                        <div class="name">
+                            <h3><%= link_to article.data.nome, article.url %></h3>
+                        </div>
+                        <div class="text">
+                            <p class="hidden-sm"><%= article.data.descrição%></p>
+                            <p class="buttons">
+                               <%= link_to 'Confira', article.url, class:"btn btn-template-transparent-primary" %>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /.box-image -->
+
+                </div>
+
+              <%end%>
+
+            </div>
+
+        </section>
+    <!-- /.container -->
+
+        <section class="bar background-pentagon no-mb">
+            <div class="container">
+                <div class="row showcase">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="item">
+                            <div class="icon"><i class="fa fa-certificate"></i>
+                            </div>
+                            <h4><span class="counter">250000</span><br>
+
+    Brigadeiros</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="item">
+                            <div class="icon"><i class="fa fa-birthday-cake"></i>
+                            </div>
+                            <h4><span class="counter">450</span><br>
+
+    Bolos</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="item">
+                            <div class="icon"><i class="fa fa-graduation-cap"></i>
+                            </div>
+                            <h4><span class="counter">2</span><br>
+
+    Cursos</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="item">
+                            <div class="icon"><i class="fa fa-smile-o"></i>
+                            </div>
+                            <h4><span class="counter">355</span><br>
+
+    Clientes Satisfeitos</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+    <!-- /.bar -->
+    </div>
+</div>
+

@@ -1,0 +1,238 @@
+<div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h1>Nossos Produtos</h1>
+            </div>
+            <div class="col-md-5">
+                <ul class="breadcrumb">
+                    <li><a href="index.html">Home</a>
+                    </li>
+                    <li>Nossos Produtos</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="content">
+    <div class="container">
+
+        <section>
+
+            <!-- <div class="row">
+                <div class="col-md-12">
+                    <div class="heading">
+                        <h2>Faça já sua encomenda</h2>
+                    </div>
+
+                    <p class="lead"><i class="fa fa-whatsapp" aria-hidden="true"></i> 41 96937334</p>
+                </div>
+            </div>
+ -->
+            <div class="row portfolio">
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="box-image">
+                        <div class="image">
+                            <%= thumb_tag 'bolokitkat.jpg','750x500#', class:"img-responsive" %>
+                        </div>
+                        <div class="bg"></div>
+                        <div class="name">
+                            <h3><%= link_to "Bolos", categoria_path("bolos",'produtos')%></h3>
+                        </div>
+                        <div class="text">
+                            <p class="hidden-sm hidden-lg hidden-md">Os mais deliciosos bolos da cidade irão fazer da sua festa um sucesso.</p>
+                            <p class="buttons">
+                                <%= link_to 'Confira', categoria_path('bolos','produtos'), class:"btn btn-template-transparent-primary" %>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /.box-image -->
+
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="box-image">
+                        <div class="image">
+                            <%= thumb_tag 'brigadeiros.jpg', '750x500#', class:"img-responsive" %>
+                        </div>
+                        <div class="bg"></div>
+                        <div class="name">
+                            <h3><%= link_to "Brigadeiros", categoria_path("brigadeiros",'produtos')%></h3>
+                        </div>
+                        <div class="text">
+                            <p class="hidden-sm hidden-lg hidden-md">Escolha até cinco sabores diferentes de brigadeiro e monte sua caixa.</p>
+                            <p class="buttons">
+                                <%= link_to 'Confira', categoria_path('brigadeiros','produtos'), class:"btn btn-template-transparent-primary" %>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /.box-image -->
+
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="box-image">
+                        <div class="image">
+                            <%= thumb_tag 'cursos.jpg','750x500#', class:"img-responsive" %>
+                        </div>
+                        <div class="bg"></div>
+                        <div class="name">
+                            <h3><%= link_to "Cursos", categoria_path("cursos",'produtos')%></h3>
+                        </div>
+                        <div class="text">
+                            <p class="hidden-sm hidden-lg hidden-md">Desenvolva técnicas avançadas e torne-se um mestre na confeitaria.</p>
+                            <p class="buttons">
+                                <%= link_to 'Confira', categoria_path('cursos','produtos'), class:"btn btn-template-transparent-primary" %>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /.box-image -->
+
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="box-image">
+                        <div class="image">
+                            <%= thumb_tag 'mesa-festa.jpg','750x500#', class:"img-responsive" %>
+                        </div>
+                        <div class="bg"></div>
+                        <div class="name">
+                            <h3><%= link_to "Lembrancinhas", categoria_path("lembrancinhas",'produtos')%></h3>
+                        </div>
+                        <div class="text">
+                            <p class="hidden-sm hidden-lg hidden-md">Surpreenda seus convidados com as lembrancinhas mais gostosas.</p>
+                            <p class="buttons">
+                                <%= link_to 'Confira', categoria_path('lembrancinhas','produtos'), class:"btn btn-template-transparent-primary" %>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /.box-image -->
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+    <!-- /.container -->
+
+    <section class="bar background-gray no-mb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading text-center">
+                        <h2>Testimoniais</h2>
+                    </div>
+
+                    <p class="lead">Nós já atendemos muitos clientes e estamos sempre felizes para ouvir o que eles tem a dizer sobre nossos produtos.</p>
+
+
+                    <!-- *** TESTIMONIALS CAROUSEL ***
+_________________________________________________________ -->
+
+                    <ul class="owl-carousel testimonials same-height-row">
+                        <li class="item">
+                            <div class="testimonial same-height-always">
+                                <div class="text">
+                                    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown
+                                        belly, slightly domed and divided by arches into stiff sections.</p>
+                                </div>
+                                <div class="bottom">
+                                    <div class="icon"><i class="fa fa-quote-left"></i>
+                                    </div>
+                                    <div class="name-picture">
+                                        <img class="" alt="" src="img/person-1.jpg">
+                                        <h5>John McIntyre</h5>
+                                        <p>CEO, TransTech</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="testimonial same-height-always">
+                                <div class="text">
+                                    <p>The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to
+                                        me? " he thought. It wasn't a dream.</p>
+                                </div>
+                                <div class="bottom">
+                                    <div class="icon"><i class="fa fa-quote-left"></i>
+                                    </div>
+                                    <div class="name-picture">
+                                        <img class="" alt="" src="img/person-2.jpg">
+                                        <h5>John McIntyre</h5>
+                                        <p>CEO, TransTech</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="testimonial same-height-always">
+                                <div class="text">
+                                    <p>His room, a proper human room although a little too small, lay peacefully between its four familiar walls.</p>
+
+                                    <p>A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded
+                                        frame.</p>
+                                </div>
+                                <div class="bottom">
+                                    <div class="icon"><i class="fa fa-quote-left"></i>
+                                    </div>
+                                    <div class="name-picture">
+                                        <img class="" alt="" src="img/person-3.png">
+                                        <h5>John McIntyre</h5>
+                                        <p>CEO, TransTech</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="testimonial same-height-always">
+                                <div class="text">
+                                    <p>It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull
+                                        weather. Drops of rain could be heard hitting the pane, which made him feel quite sad.</p>
+                                </div>
+
+                                <div class="bottom">
+                                    <div class="icon"><i class="fa fa-quote-left"></i>
+                                    </div>
+                                    <div class="name-picture">
+                                        <img class="" alt="" src="img/person-4.jpg">
+                                        <h5>John McIntyre</h5>
+                                        <p>CEO, TransTech</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="testimonial same-height-always">
+                                <div class="text">
+                                    <p>It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull
+                                        weather. Drops of rain could be heard hitting the pane, which made him feel quite sad. Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made
+                                        him feel quite sad.</p>
+                                </div>
+
+                                <div class="bottom">
+                                    <div class="icon"><i class="fa fa-quote-left"></i>
+                                    </div>
+                                    <div class="name-picture">
+                                        <img class="" alt="" src="img/person-4.jpg">
+                                        <h5>John McIntyre</h5>
+                                        <p>CEO, TransTech</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- /.owl-carousel -->
+
+                    <!-- *** TESTIMONIALS CAROUSEL END *** -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- /.bar -->
+</div>
+
